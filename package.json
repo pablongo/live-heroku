@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest --watchAll --collect-coverage",
-    "debug": "nodemon --inspect-brk index.js"
+    "debug": "nodemon --inspect-brk index.js",
+    "heroku-postbuild": "cd frontend && npm install --only=dev && npm install && npm run build"
   },
   "engines": {
     "node": "14.17.2"
